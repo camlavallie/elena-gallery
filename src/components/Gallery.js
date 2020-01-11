@@ -54,10 +54,8 @@ function Gallery() {
     },
   ])
   return (
-    <div>
-      <div className="text-center">
-
-      <div className=" text-center flex flex-wrap">
+    <div className="container">
+      <div className=" justify-center flex flex-wrap">
       {Images.map(Image => (
         <div key={Image.id}>
             <img className="w-64 h-auto m-3" src={Image.pic} alt="sketch"/>
@@ -65,7 +63,7 @@ function Gallery() {
       ))}
       </div>
       </div>
-    </div>
+
   )
 }
 

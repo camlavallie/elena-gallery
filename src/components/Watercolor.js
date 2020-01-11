@@ -52,10 +52,8 @@ function Watercolor() {
     },
   ])
   return (
-    <div>
-      <div className="text-center">
-
-      <div className=" text-center flex flex-wrap">
+    <div className="container">
+      <div className=" justify-center flex flex-wrap">
       {Images.map(Image => (
         <div key={Image.id}>
             <img className="w-auto h-64 m-3" src={Image.pic} alt="sketch"/>
@@ -63,7 +61,6 @@ function Watercolor() {
       ))}
       </div>
       </div>
-    </div>
   )
 }
 
