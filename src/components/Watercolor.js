@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 function Watercolor() {
-   const [Images] = useState([
+  const [Images] = useState([
     {
       id: 1,
       pic: require('../watercolor/cactus.jpg')
@@ -49,19 +49,19 @@ function Watercolor() {
     {
       id: 12,
       pic: require('../watercolor/zebra.jpg')
-    },
-  ])
+    }
+  ]);
   return (
     <div className="container">
       <div className=" justify-center flex flex-wrap">
-      {Images.map(Image => (
-        <div key={Image.id}>
-            <img className="w-auto h-64 m-3" src={Image.pic} alt="sketch"/>
-        </div>
-      ))}
+        {Images.map(Image => (
+          <div key={Image.id}>
+            <img className="w-auto h-64 m-3" src={Image.pic} alt="sketch" />
+          </div>
+        ))}
       </div>
-      </div>
-  )
+    </div>
+  );
 }
 
-export default Watercolor
+export default Watercolor;

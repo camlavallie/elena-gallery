@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 
 function Gallery() {
   const [Images] = useState([
@@ -13,7 +13,6 @@ function Gallery() {
     {
       id: 3,
       pic: require('../sketches/bull.jpg')
-
     },
     {
       id: 4,
@@ -50,21 +49,19 @@ function Gallery() {
     {
       id: 12,
       pic: require('../sketches/Bear.JPG')
-
-    },
-  ])
+    }
+  ]);
   return (
     <div className="container">
       <div className=" justify-center flex flex-wrap">
-      {Images.map(Image => (
-        <div key={Image.id}>
-            <img className="w-64 h-auto m-3" src={Image.pic} alt="sketch"/>
-        </div>
-      ))}
+        {Images.map(Image => (
+          <div key={Image.id}>
+            <img className="w-64 h-auto m-3" src={Image.pic} alt="sketch" />
+          </div>
+        ))}
       </div>
-      </div>
-
-  )
+    </div>
+  );
 }
 
-export default Gallery
+export default Gallery;
