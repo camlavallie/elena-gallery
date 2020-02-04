@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Gallery from './components/Gallery';
 import Home from './components/Home';
 import Watercolor from './components/Watercolor';
+import Random from './components/Random';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           </Switch>
           <Switch>
             <Route exact path="/watercolor" component={Watercolor} />
+          </Switch>
+          <Switch>
+            <Route exact path="/random" component={Random} />
           </Switch>
         </div>
 
