@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -36,16 +37,16 @@ function Home() {
           This site is under construction. In the meantime enjoy skethches and
           watercolor created by Elena Kathryn!
         </p>
-        <a href="/gallery">
+        <Link to="/gallery">
           <button class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3 mr-3">
             Sketches
           </button>
-        </a>
-        <a href="/watercolor">
+        </Link>
+        <Link to="/watercolor">
           <button class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Watercolor
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
